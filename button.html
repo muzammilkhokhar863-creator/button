@@ -1,1 +1,66 @@
-add this file for button
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Button</title>
+
+  <!-- CSS START -->
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .my-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .my-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 20px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+  <!-- CSS END -->
+
+</head>
+<body>
+
+  <!-- HTML START -->
+  <h1>My First Button</h1>
+
+  <button class="my-btn" onclick="buttonClicked()">Click Me</button>
+
+  <p id="message"></p>
+  <!-- HTML END -->
+
+  <!-- JS START -->
+  <script>
+    function buttonClicked() {
+      document.getElementById("message").innerText = "Hello! Button Clicked ✅";
+      alert("Button Clicked!");
+    }
+  </script>
+  <!-- JS END -->
+
+</body>
+</html>
